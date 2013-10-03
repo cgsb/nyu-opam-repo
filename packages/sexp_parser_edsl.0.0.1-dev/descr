@@ -1,0 +1,2 @@
+Experimental GADT-based S-Expression Parsing
+The `Sexp_parser_edsl` provides a GADT and practical constructors to define the syntax and the parsing of Lisp-like DSLs (S-Expression based) with a declarative EDSL. Then a `parse_sexp` function interprets that EDSL with a `Sexp.Annotate.t` from `sexplib` to build a particular AST (or fail nicely with location information).

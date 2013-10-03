@@ -1,0 +1,11 @@
+opam-version: "1"
+maintainer: "seb@mondet.org"
+homepage: "http://bitbucket.org/smondet/pvem_lwt_file_lock"
+build: [
+  ["ocaml" "please.ml" "build"]
+  ["ocaml" "please.ml" "install"]
+]
+remove: [
+  ["ocaml" "please.ml" "uninstall"]
+]
+depends: ["ocamlfind" "base-threads" "base-unix" "lwt" "pvem" "pvem_lwt_unix"]

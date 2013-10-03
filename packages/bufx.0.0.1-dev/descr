@@ -1,0 +1,6 @@
+Passive Buffered Transforms for OCaml
+`Bufx.Transform.t` is a container for buffered transformations over streams modeled in the style of the [Cryptokit] library for the [Biocaml] project. Being *“Passive”* means that a transform does not *pull* from a stream, it has to be *fed* with data; this allows to write stream transformations (like file-formats parsing/printing) that are compatible with both “normal” I/O (like `in_channel`) and asynchronous libraries (like `Lwt_unix` or `Async_unix`).
+                       
+
+[Cryptokit]: http://forge.ocamlcore.org/projects/cryptokit/
+[Biocaml]: http://biocaml.org

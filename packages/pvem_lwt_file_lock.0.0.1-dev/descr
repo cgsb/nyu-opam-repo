@@ -1,0 +1,2 @@
+Experimental NFS-Compliant File-locking with Pvem and Lwt_unix
+`Pvem_lwt_file_lock` is an extension to `Pvem_lwt_unix` to manage file locks on NFS-like file-systems (by creating `.lock` files and using supposedly atomic operations). It should be considered experimental.
