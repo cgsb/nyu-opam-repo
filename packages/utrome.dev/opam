@@ -1,0 +1,11 @@
+opam-version: "1"
+maintainer: "ashish.agarwal@nyu.edu"
+build: [
+  ["omake" "configure" "PREFIX=%{prefix}%" "BUILD_APP=true"]
+  ["omake"]
+  ["omake" "install"]
+]
+remove: [
+  ["ocamlfind" "remove" "utrome"]
+]
+depends: ["oasis" "ocamlfind" "core" "biocaml" "pxp" "sequme" "calendar"]
