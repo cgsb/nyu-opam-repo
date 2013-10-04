@@ -1,0 +1,2 @@
+A DSL FOr Managing Processes
+An utility based on a DSL to manage processes with PBS, `nohup`, `ssh`, `screen`, or whatever is available.

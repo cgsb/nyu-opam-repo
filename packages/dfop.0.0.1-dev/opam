@@ -1,0 +1,11 @@
+opam-version: "1"
+maintainer: "seb@mondet.org"
+homepage: "http://bitbucket.org/smondet/dfop"
+build: [
+  ["ocaml" "please.ml" "build"]
+  ["ocaml" "please.ml" "install" "--prefix" "%{prefix}%"]
+]
+remove: [
+  ["ocaml" "please.ml" "uninstall" "--prefix" "%{prefix}%"]
+]
+depends: ["ocamlfind" "base-threads" "nonstd" "ocaml-pbs" "pvem" "pvem_lwt_unix" "sexp_parser_edsl" "sexplib" {>= "108.00.02" } "sosa"]
