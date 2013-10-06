@@ -1,0 +1,11 @@
+opam-version: "1"
+maintainer: "seb@mondet.org"
+homepage: "http://bitbucket.org/smondet/priwiki"
+build: [
+  ["ocaml" "please.ml" "build"]
+  ["ocaml" "please.ml" "install" "--prefix" "%{prefix}%"]
+]
+remove: [
+  ["ocaml" "please.ml" "uninstall" "--prefix" "%{prefix}%"]
+]
+depends: ["ocamlfind" "base-threads" "nonstd" "omd" "pvem" "pvem_lwt_unix" "sexplib" {>= "108.00.02" } "sexplib.syntax" "sosa"]
