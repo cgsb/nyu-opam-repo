@@ -8,4 +8,4 @@ build: [
 remove: [
   ["ocaml" "please.ml" "uninstall" "--prefix" "%{prefix}%"]
 ]
-depends: ["ocamlfind" "base-threads" "nonstd" "omd" "pvem" "pvem_lwt_unix" "sexplib" {>= "108.00.02" } "sexplib.syntax" "sosa"]
+depends: ["ocamlfind" "base-threads" "nonstd" "omd" {>= "108.00.02" } "pvem" "pvem_lwt_unix" "sexplib" {>= "108.00.02" } "sexplib.syntax" "sosa"]
