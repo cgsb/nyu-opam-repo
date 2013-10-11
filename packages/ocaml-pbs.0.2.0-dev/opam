@@ -1,0 +1,11 @@
+opam-version: "1"
+maintainer: "seb@mondet.org"
+homepage: "http://github.com/smondet/ocaml-pbs"
+build: [
+  ["omake"]
+  ["omake" "install"]
+]
+remove: [
+  ["omake" "uninstall"]
+]
+depends: ["ocamlfind" omake "nonstd" "pvem" "sexplib" {>= "108.00.02" } "sosa"]
