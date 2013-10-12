@@ -8,4 +8,4 @@ build: [
 remove: [
   ["omake" "uninstall"]
 ]
-depends: ["ocamlfind" omake "nonstd" "pvem" "sexplib" {>= "108.00.02" } "sosa"]
+depends: ["ocamlfind" "omake" "nonstd" "pvem" "sexplib" {>= "108.00.02" } "sosa"]
