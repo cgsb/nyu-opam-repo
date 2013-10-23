@@ -1,0 +1,9 @@
+opam-version: "1"
+maintainer: "seb@mondet.org"
+build: [
+  ["echo" "Done"]
+]
+remove: [
+  ["echo" "Done"]
+]
+depends: ["ocamlfind" "virutal-all-seb" "hitscore" "eliom" "re" ]
