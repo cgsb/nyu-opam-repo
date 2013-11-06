@@ -1,0 +1,11 @@
+opam-version: "1"
+maintainer: "seb@mondet.org"
+homepage: "http://bitbucket.org/smondet/ocaml402_pp"
+build: [
+  ["ocaml" "please.ml" "build"]
+  ["ocaml" "please.ml" "install" "--prefix" "%{prefix}%"]
+]
+remove: [
+  ["ocaml" "please.ml" "uninstall" "--prefix" "%{prefix}%"]
+]
+depends: ["ocamlfind" "nonstd" "sosa"]
