@@ -6,4 +6,4 @@ build: [
 remove: [
   ["echo" "Done"]
 ]
-depends: ["ocamlfind" "sosa" "priwiki" "merlin" "ocp-indent" ]
+depends: ["ocamlfind" "sosa" "priwiki" "merlin" "ocp-indent" "ocaml402_pp"]
