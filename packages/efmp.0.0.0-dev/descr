@@ -1,0 +1,2 @@
+EDSL Library For Managing Processes
+The library provides an Embedded Domain Specific Language for managing processes and jobs on different hosts with different backends (for now only, direct calls, `nohup setsid` process trees, and PBS/Torque jobs).
