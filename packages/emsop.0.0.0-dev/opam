@@ -2,12 +2,12 @@ opam-version: "1"
 maintainer: "seb@mondet.org"
 build:
     [
-    ["ocaml" "please.ml" "build"]
-    ["ocaml" "please.ml" "install"]
+    ["omake"]
+    ["omake" "install"]
     ]
 remove:
     [
-    ["ocaml" "please.ml" "uninstall"]
+    ["omake" "uninstall"]
     ]
-depends: ["ocamlfind" "nonstd" "sosa" "pvem" "cmdliner" "omd"
+depends: ["ocamlfind" "omake" "nonstd" "sosa" "pvem" "cmdliner" "omd"
 "smart-print"]
