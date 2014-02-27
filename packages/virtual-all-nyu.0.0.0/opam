@@ -6,4 +6,4 @@ build: [
 remove: [
   ["echo" "Done"]
 ]
-depends: ["ocamlfind" "virtual-all-seb" "hitscore" "eliom" "re" ]
+depends: ["ocamlfind" "virtual-all-seb" "hitscore" "jsonm" "eliom" "re" ]
