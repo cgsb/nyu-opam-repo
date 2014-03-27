@@ -11,4 +11,13 @@ remove: [
   ["ocamlfind" "remove" "hitscore"]
   ["ocamlfind" "remove" "hitscoregen"]
 ]
-depends: ["oasis" "ocamlfind" "core" "lwt" "cryptokit" "pgocaml" "xmlm" "simple_pam"]
+depends: ["oasis" { = "0.4.2"}
+          "ocamlfind" { = "1.4.0" }
+          "core" {= "109.53.01"}
+          "lwt" {= "2.4.4"}
+          "cryptokit" {= "1.9"}
+          "ssl" {= "0.4.6"}
+          "pgocaml" {= "1.7.1"}
+          "xmlm" {= "1.2.0"}
+          "simple_pam" {= "0.1.2"}
+          ]
